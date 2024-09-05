@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 1rem 0rem;
+}
+
+:root {
+  --gray-color: #545454;
+  --black-color: #1f1f1f;
+  --line-color: #dadada;
+  --br-4: 4px;
+}
+
+/* Start Of Header */
+
+.navbar-brand {
+  max-width: 100%;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    margin: 0;
+  }
+
+  .navbar-brand {
+    width: 120px;
+  }
+}
+
+header nav div ul.navbar-nav li a {
+  font-size: 20px;
+}
+
+header .sign-up {
+  width: 175px;
+  font-size: 20px;
+  line-height: 1.4;
+  font-weight: 600;
+  border-radius: var(--br-4);
+}
+
+/* End Of Header */
+
+/* Start Of Main */
+
+.interior-desing {
+  font-size: 120px;
+}
+
+main .landing-paragragh {
+  font-size: 24px;
+  color: var(--gray-color);
+  width: 75%;
+  line-height: 1.5;
+}
+
+main .start-btn {
+  width: 270px;
+  height: 70px;
+  font-size: 24px;
+  font-weight: 500;
+  border-radius: var(--br-4);
+}
+
+main .stats h3 {
+  font-size: 70px;
+  color: var(--gray-color);
+}
+
+main .stats p {
+  font-size: 22px;
+  color: var(--gray-color);
+}
+
+main .design-2 {
+  width: 550px;
+}
+
+main .right-side {
+  position: relative;
+}
+
+main .black-box {
+  position: absolute;
+  left: 78%;
+  bottom: 5px;
+  width: 125px;
+  height: 125px;
+  background-color: var(--black-color);
+}
+
+main .black-box i {
+  color: white;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .interior-desing {
+    font-size: 50px;
+  }
+
+  main .landing-paragragh {
+    font-size: 1rem;
+    width: 100%;
+    line-height: 1.5;
+  }
+
+  main .start-btn {
+    width: 220px;
+    height: 65px;
+    font-size: 24px;
+  }
+
+  main .stats h3 {
+    font-size: 30px;
+  }
+
+  main .stats p {
+    font-size: 0.7rem;
+  }
+
+  main .black-box {
+    right: 0;
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media (max-width: 767px) {
+  main .stats {
+    justify-content: center;
+  }
+
+  main .start-btn {
+    width: 210px;
+    height: 55px;
+    font-size: 22px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  main .black-box {
+    width: 70px;
+    height: 70px;
+  }
+
+  main .black-box i {
+    font-size: 25px;
+  }
+}
+
+/* End Of Main */
+
+/* Start Of Services Section */
+
+.services {
+  margin-top: 6rem;
+}
+
+.services .head-line h2 {
+  font-size: 58px;
+}
+
+.services .head-line span {
+  width: 100px;
+  height: 3px;
+  background-color: var(--black-color);
+}
+
+.services .text p {
+  color: var(--gray-color);
+  width: 75%;
+}
+
+@media (max-width: 1024px) {
+  .services .text p {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .services {
+    margin-top: 4rem;
+  }
+
+  .services .head-line span {
+    width: 75px;
+    height: 3px;
+  }
+
+  .services .head-line h2 {
+    font-size: 35px;
+  }
+}
+/* End Of Services Section */
+
+/* Start Of Designing Section */
+
+.design-section .info h2 {
+  font-size: 58px;
+}
+
+.design-section .info p {
+  font-size: 22px;
+  color: var(--gray-color);
+  line-height: 1.5;
+}
+
+.design-section .info .box .content {
+  position: relative;
+  cursor: pointer;
+}
+
+.design-section .info .box .content::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--line-color);
+}
+
+.design-section .info .box h5 {
+  font-size: 24px;
+}
+
+.design-section .info i {
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.design-section .info button {
+  width: 275px;
+  height: 80px;
+  border-radius: var(--br-4);
+  font-size: 24px;
+}
+
+@media (max-width: 1024px) {
+  .design-section .info h2 {
+    font-size: 25px;
+  }
+
+  .design-section .info p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .design-section .info .box h5 {
+    font-size: 1rem;
+  }
+
+  .design-section .info button {
+    width: 150px;
+    height: 50px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .design-section .info .box h5 {
+    font-size: 0.8rem;
+  }
+
+  .design-section .info i {
+    font-size: 18px;
+
+  }
+}
+/* End Of Designing Section */
