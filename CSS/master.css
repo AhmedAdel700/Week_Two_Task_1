@@ -5,7 +5,8 @@
 }
 
 body {
-  margin: 1rem 0rem;
+  margin: 1rem 0rem 0rem;
+  background-color: #fcf8f8;
 }
 
 :root {
@@ -107,14 +108,14 @@ main .black-box i {
   cursor: pointer;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .interior-desing {
-    font-size: 50px;
+    font-size: 60px;
   }
 
   main .landing-paragragh {
-    font-size: 1rem;
-    width: 100%;
+    font-size: 1.2rem;
+    width: 75%;
     line-height: 1.5;
   }
 
@@ -125,17 +126,38 @@ main .black-box i {
   }
 
   main .stats h3 {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   main .stats p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   main .black-box {
     right: 0;
     width: 80px;
     height: 80px;
+  }
+}
+
+@media (max-width: 991px) {
+  @media (max-width: 1024px) {
+    .interior-desing {
+      font-size: 50px;
+    }
+
+    main .landing-paragragh {
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    main .stats h3 {
+      font-size: 35px;
+    }
+
+    main .stats p {
+      font-size: 0.6rem;
+    }
   }
 }
 
@@ -251,13 +273,13 @@ main .black-box i {
   font-size: 24px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1150px) {
   .design-section .info h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .design-section .info p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.3;
   }
 
@@ -272,14 +294,240 @@ main .black-box i {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
+  .design-section .info h2 {
+    font-size: 25px;
+  }
+
+  .design-section .info p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
   .design-section .info .box h5 {
     font-size: 0.8rem;
   }
 
+  .design-section .info button {
+    width: 160px;
+    height: 50px;
+    font-size: 18px;
+  }
   .design-section .info i {
     font-size: 18px;
-
   }
 }
+
 /* End Of Designing Section */
+
+/* Start Of Three Steps Section */
+
+.three-steps {
+  margin-top: -1rem !important;
+}
+
+.three-steps .steps h2 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.three-steps .steps .step .img-box img,
+.three-steps .steps .step .img-box-2 img {
+  margin-top: -0.7rem;
+  border: 15px solid white;
+  border-radius: 50%;
+  z-index: 100;
+  position: relative;
+}
+
+.three-steps .step .img-box {
+  position: relative;
+  max-width: 100%;
+  height: 60px;
+}
+
+.three-steps .step .img-box::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 125px;
+  height: 100px;
+  width: 2px;
+  background-color: var(--line-color);
+}
+
+.three-steps .step .box h4 {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--black-color);
+}
+
+.three-steps .step .box p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--gray-color);
+  width: 85%;
+}
+
+@media (max-width: 1150px) {
+  .three-steps .steps h2 {
+    font-size: 30px;
+  }
+
+  .three-steps .steps .step .img-box img,
+  .three-steps .steps .step .img-box-2 img {
+    margin: 0rem;
+    border: 10px solid white;
+  }
+
+  .three-steps .step .img-box::before {
+    top: 100px;
+    height: 100px;
+    width: 2px;
+    background-color: var(--line-color);
+  }
+
+  .three-steps .step .box h4 {
+    font-size: 24px;
+  }
+
+  .three-steps .step .box p {
+    font-size: 0.8rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  .three-steps .steps h2 {
+    font-size: 24px;
+  }
+
+  .three-steps .steps .step .img-box img,
+  .three-steps .steps .step .img-box-2 img {
+    width: 50px;
+  }
+
+  .three-steps .step .box h4 {
+    font-size: 20px;
+  }
+
+  .three-steps .step .box p {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .three-steps .steps .step .img-box img,
+  .three-steps .steps .step .img-box-2 img {
+    border: 6px solid white;
+  }
+
+  .three-steps .step .img-box::before {
+    top: 75px;
+    height: 55px;
+    width: 2px;
+    background-color: var(--line-color);
+  }
+}
+
+/* Start About Us Section */
+
+.about-us {
+  margin-top: 150px;
+}
+
+/* End About Us Section */
+
+/* Start Footer */
+
+footer {
+  margin-top: 150px;
+  min-height: 45vh;
+  background-color: var(--black-color);
+  position: relative;
+}
+
+footer .input-field {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffffff;
+  width: 980px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  font-size: 24px;
+}
+
+footer .input-field button {
+  height: 60px;
+  width: 250px;
+  margin: 0 0.4rem;
+  border-radius: var(--br-4);
+  font-size: 24px;
+}
+
+footer .input-field .box {
+  flex: 1;
+  color: #8c8c8c;
+  margin-left: 1.5rem;
+}
+
+footer .input-field .box input {
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+@media (max-width: 1150px) {
+  footer .input-field {
+    width: 650px;
+    font-size: 20px;
+  }
+
+  footer .input-field button {
+    width: 200px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  footer .input-field {
+    width: 550px;
+    font-size: 18px;
+  }
+
+  footer .input-field button {
+    width: 160px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  footer .input-field {
+    width: 350px;
+    height: 60px;
+    font-size: 14px;
+  }
+
+  footer .input-field button {
+    width: 100px;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 320px) {
+  footer .input-field {
+    width: 300px;
+  }
+}
+
+/* End Footer */
+
+/* End Of Three Steps Section */
