@@ -335,7 +335,7 @@ main .black-box i {
 .three-steps .steps .step .img-box img,
 .three-steps .steps .step .img-box-2 img {
   margin-top: -0.7rem;
-  border: 15px solid white;
+  border: 15px solid #fcf8f8;
   border-radius: 50%;
   z-index: 100;
   position: relative;
@@ -379,7 +379,7 @@ main .black-box i {
   .three-steps .steps .step .img-box img,
   .three-steps .steps .step .img-box-2 img {
     margin: 0rem;
-    border: 10px solid white;
+    border: 10px solid #fcf8f8;
   }
 
   .three-steps .step .img-box::before {
@@ -421,7 +421,7 @@ main .black-box i {
 @media (max-width: 767px) {
   .three-steps .steps .step .img-box img,
   .three-steps .steps .step .img-box-2 img {
-    border: 6px solid white;
+    border: 6px solid #fcf8f8;
   }
 
   .three-steps .step .img-box::before {
@@ -435,10 +435,196 @@ main .black-box i {
 /* Start About Us Section */
 
 .about-us {
-  margin-top: 150px;
+  margin-top: 50px;
+}
+
+.about-us h2 {
+  font-size: 58px;
+}
+
+.about-us .info-box {
+  position: absolute;
+  left: 59%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  padding: 1.2rem;
+  background-color: white;
+  width: fit-content;
+}
+
+.about-us .info-box .box {
+  height: 500px;
+  width: 500px;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border-radius: var(--br-4);
+}
+
+.about-us .info-box .box p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.about-us .info-box .box span {
+  color: var(--gray-color);
+  font-size: 19px;
+}
+
+.about-us i {
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.about-us i:hover {
+  background-color: var(--line-color) !important;
+}
+
+@media (max-width: 1300px) {
+  .about-us {
+    margin-top: 30px;
+  }
+
+  .about-us .img-fluid {
+    display: none;
+  }
+
+  .about-us .text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-us .text h2 {
+    font-size: 35px;
+  }
+
+  .about-us .icons {
+    display: block !important;
+  }
+
+  .about-us .info-box {
+    position: static;
+    transform: translate(0%, 0%);
+    margin: 0 auto;
+    padding: 1rem;
+    gap: 1rem !important;
+  }
+
+  .about-us .info-box .box {
+    height: 400px;
+    width: 400px;
+  }
+
+  .about-us .info-box .box p {
+    font-size: 1rem;
+  }
+
+  .about-us .info-box .box span {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 991px) {
+  .about-us {
+    margin-top: 0px;
+  }
+
+  .about-us .img-fluid {
+    display: none;
+  }
+
+  .about-us .text h2 {
+    font-size: 30px;
+  }
+
+  .about-us .info-box .box {
+    height: 340px;
+    width: 340px;
+    justify-content: space-between !important;
+    padding: 1.5rem !important;
+  }
+
+  .about-us .info-box .box .qoute {
+    width: 30px;
+  }
+
+  .about-us .info-box .box img {
+    width: 50px;
+  }
+
+  .about-us .info-box .box h4 {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-us .info-box {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 350px) {
+  .about-us .info-box .box {
+    height: 300px;
+    width: 300px;
+    padding: 1rem !important;
+  }
 }
 
 /* End About Us Section */
+
+/* Start Of Subscribe */
+
+.subscribe {
+  margin: 10rem 0;
+}
+
+.subscribe h2 {
+  font-size: 58px;
+  font-weight: 600;
+  width: 60%;
+  margin: 0rem auto 3rem;
+}
+
+.subscribe p {
+  font-size: 24px;
+  width: 60%;
+  margin: 0rem auto;
+  color: #545454;
+}
+
+@media (max-width: 1300px) {
+  .subscribe {
+    margin: 4rem 0;
+  }
+
+  .subscribe h2 {
+    font-size: 30px;
+    width: 100%;
+    margin: 0rem auto 1rem;
+  }
+
+  .subscribe p {
+    font-size: 18px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 767px) {
+  .subscribe {
+    margin: 1rem 0;
+  }
+
+  .subscribe h2 {
+    font-size: 20px;
+  }
+
+  .subscribe p {
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+/* End Of Subscribe */
 
 /* Start Footer */
 
@@ -509,7 +695,7 @@ footer .logo-footer p {
   width: 50%;
 }
 
-footer i {
+footer .icons i {
   background-color: #313131;
   color: #ffffff;
   border-radius: 5px;
@@ -523,6 +709,10 @@ footer .address {
 }
 
 @media (max-width: 1150px) {
+  footer {
+    margin-top: 100px;
+  }
+
   footer .input-field {
     width: 650px;
     font-size: 20px;
